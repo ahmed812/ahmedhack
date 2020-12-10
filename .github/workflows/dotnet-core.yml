@@ -21,6 +21,6 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --configuration Release --no-restore --source  ahmedhack/apis/poi/web/poi.csproj 
+      run: dotnet build --configuration Release   ahmedhack/apis/poi/web/poi.csproj 
     - name: Test
-      run: dotnet test --no-restore --verbosity normal  ahmedhack/apis/poi/tests/poi.csproj 
+      run: dotnet test --verbosity normal  ahmedhack/apis/poi/tests/poi.csproj 
